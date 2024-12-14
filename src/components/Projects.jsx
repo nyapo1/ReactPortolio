@@ -52,7 +52,7 @@ const Projects = () => {
               <div className="card-body align-content-center">
                 <h5 className="card-title">{project.title}</h5>
                 <p className="card-text">{project.description}</p>
-                <a href={project.link} className="btn btn-secondary" target="_blank">View Project</a>
+                <a href={project.link} className="btn btn-primary" target="_blank">View Project</a>
               </div>
             </div>
           </motion.div>

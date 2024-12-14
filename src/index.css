@@ -21,7 +21,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background: linear-gradient(#0A1128,#034078);
+  background: linear-gradient(#0A1128,#034078,#0A1128,#034078);
 }
 
 

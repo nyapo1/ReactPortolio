@@ -80,7 +80,7 @@ const Skills = () => {
             >
               <li> <FaGitAlt/> Git </li>
               <li> <FaGithub/>  GitHub</li>
-              <li> Building responsive websites</li>
+              <li> Building responsive Designs</li>
             </motion.ul>
           </div>
 
