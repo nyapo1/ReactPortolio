@@ -1,33 +1,38 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import '../index.css';
 
 const Navbars = () => {
+    const linkClass = ({ isActive }) => 
+        isActive 
+          ? "link-text" 
+          : "hero-text";
 
-  return (
-    <div className="parallax-content baner-content" id="home">
-        <div className="container-sm">
-            <header className="d-flex justify-content-center py-2 fixed-top  border border-secondary main-navbar row">
-                <ul className="nav nav-pills bg-transparent   justify-content-center row">
-                    <li className="nav-item li-item col-3">
-                        <a href="#services" className="nav-link ">Projects</a>
-                    </li>
-                    <li className="nav-item li-item col-3">
-                        <a href="#our-story" className="nav-link me-5 text-center">Experience</a>
-                    </li>
-                    <li className="nav-item li-item col-3">
-                        <a href="#contact" className="nav-link text-center ms-3">Contact</a>
-                    </li>
-                </ul>
-            </header>
+    return (
+        <div className="container-lg">
+            <div className='row justify-content-center'>
+                <header className="py-2 fixed-top rounded main-navbar  col-md-8 text-center mt-3">
+                    <ul className="nav nav-pills bg-transparent justify-content-around">
+                        <li className="nav-item li-item col-3">
+                            <NavLink to="#skills" className={linkClass}>
+                                Skills
+                            </NavLink>
+                        </li>
+                        <li className="nav-item li-item col-3">
+                            <NavLink to="#project" className={linkClass}>
+                                Projects
+                            </NavLink>
+                        </li>
+                        <li className="nav-item li-item col-3">
+                            <NavLink to="#contact" className={linkClass}>
+                                Contact
+                            </NavLink>
+                        </li>
+                    </ul>
+                </header>
+            </div>
         </div>
-    </div>
-);
-
-
+    );
 }
 
 export default Navbars;

@@ -77,14 +77,36 @@ button:focus-visible {
 }
 
 
+@media (min-width: 768px) {  /* Medium screens and larger */
+  .main-navbar {
+      margin-left: 17%;
+  }
+}
+
 .main-navbar{
   background-color: #072841;
+  margin-right: 10px ;
 }
 
 .hero-text{
-  color:rgb(177, 145, 145);
+  color:rgba(177, 145, 145,0.75);
 }
 
 .span-text{
-  color: rgb(124, 82, 116);
+  color: rgba(163, 59, 144,0.5);
+}
+.link-text{
+  color: rgba(252, 82, 220, 0.5);
+  text-decoration: none;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.veiw-btn{
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.view-btn:hover{
+  filter: drop-shadow(6px 6px 7em #2f38e2aa);
 }

@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbars from './components/Navbar';
 import './index.css'
 import Hero from './components/Hero';
+import Skills from './components/Skills';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,6 +13,7 @@ function App() {
     <>
     <Navbars/>
     <Hero/>
+    <Skills/>
     </>
   );
 }
