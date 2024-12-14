@@ -1,0 +1,22 @@
+.card {
+  transition: transform 0.2s; 
+  background-color: #101a38;
+}
+
+.card:hover {
+  transform: scale(1.05); 
+}
+
+.project-title {
+  margin-top: 30px;
+  color: #83A6CE;
+}
+
+.card-title{
+  color:  #83A6CE;
+}
+
+.card-text{
+  color: #E5C9D7;
+  font-size: 0.8rem;
+}

@@ -13,14 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
+
 
 body {
   margin: 0;
@@ -31,13 +24,6 @@ body {
   background: linear-gradient(#0A1128,#034078);
 }
 
-h1, h2, h3 {
-  color: #FFFFFF; /* or #FFD700 for a gold touch */
-}
-
-p {
-  color: #D3D3D3; /* or #F5F5F5 for off-white */
-}
 
 button {
   border-radius: 8px;
@@ -89,17 +75,21 @@ button:focus-visible {
 }
 
 .hero-text{
-  color:rgba(177, 145, 145,0.75);
+  color:#E5C9D7;
 }
 
 .span-text{
-  color: rgba(163, 59, 144,0.5);
+  color: #0C969C;
 }
 .link-text{
-  color: rgba(252, 82, 220, 0.5);
+  color: #0C969C;
   text-decoration: none;
   will-change: filter;
   transition: filter 300ms;
+}
+
+a:hover {
+  filter: drop-shadow(10px 10px  7em #646cffaa) !important;
 }
 
 .veiw-btn{
