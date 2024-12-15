@@ -34,7 +34,12 @@ const Skills = () => {
   }, []);
 
   return (
-    <div className="skills-container my-5" id="#skills" ref={ref}>
+    <motion.div 
+    initial={{ opacity: 0}}
+    animate={isVisible ? { opacity: 1 } : { opacity: 0}}
+    transition={{ duration: 0.8, delay: 0.7 }}
+    className="skills-container my-5" id="#skills" ref={ref}
+    >
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
@@ -110,7 +115,7 @@ const Skills = () => {
         </div>
 
       </div>
-    </div>
+    </motion.div >
   );
 };
 
