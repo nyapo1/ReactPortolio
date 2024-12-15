@@ -44,7 +44,7 @@ const Hero = () => {
 
   return (
     <motion.div
-      className='pt-4 text-center mt-5'
+      className='pt-4 text-center hero-container'
       ref={ref}
       initial='hidden'
       animate={isVisible ? 'visible' : 'hidden'}

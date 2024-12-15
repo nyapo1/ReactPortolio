@@ -8,7 +8,7 @@ const Navbars = () => {
   useEffect(() => {
     const handleScroll = () => {
       // Check if the scroll position is greater than 100vh (100 pixels)
-      if (window.scrollY > window.innerHeight) {
+      if (window.scrollY > window.innerHeight*0.7) {
         setIsVisible(false);
       } else {
         setIsVisible(true);

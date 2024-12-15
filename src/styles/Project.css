@@ -3,9 +3,7 @@
   background-color: #101a38;
 }
 
-.card:hover {
-  transform: scale(1.05); 
-}
+
 
 .project-title {
   margin-top: 30px;

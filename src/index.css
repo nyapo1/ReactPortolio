@@ -101,3 +101,7 @@ a:hover {
 .view-btn:hover{
   filter: drop-shadow(6px 6px 7em #2f38e2aa);
 }
+
+.hero-container{
+  margin-top: 15vh;
+}
