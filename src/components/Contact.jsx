@@ -32,7 +32,7 @@ const Contact = () => {
             
             <div className="input-group">
               <span className="input-group-text">
-              <label htmlFor="email" className="form-label"><FaEnvelope/> Email address:</label>
+              <label htmlFor="email" className="form-label"><FaEnvelope/> Email:</label>
               </span>
               <input 
                 type="email" 

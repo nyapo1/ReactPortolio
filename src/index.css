@@ -72,6 +72,7 @@ button:focus-visible {
 .main-navbar{
   background-color: #072841;
   margin-right: 10px ;
+  height: 10%;
 }
 
 .hero-text{
