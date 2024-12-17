@@ -28,7 +28,7 @@ const Navbars = () => {
   return (
     <div className="container-lg">
       <div className='row justify-content-center'>
-        <header className={`py-2 fixed-top rounded main-navbar col-md-8 col-11 text-center mt-3 ${isVisible ? '' : 'd-none'}`}>
+        <header className={` fixed-top rounded main-navbar col-md-8 col-11 text-center mt-3 ${isVisible ? '' : 'd-none'}`}>
         <ul className="nav nav-pills bg-transparent justify-content-around">
       <li className="nav-item li-item col-3 mt-2 align-items-center">
         <Link 
