@@ -28,14 +28,14 @@ const Navbars = () => {
   return (
     <div className="container-lg">
       <div className='row justify-content-center'>
-        <header className={`py-2 fixed-top rounded main-navbar col-md-8 text-center mt-3 ${isVisible ? '' : 'd-none'}`}>
+        <header className={`py-2 fixed-top rounded main-navbar col-md-8 col-11 text-center mt-3 ${isVisible ? '' : 'd-none'}`}>
         <ul className="nav nav-pills bg-transparent justify-content-around">
-      <li className="nav-item li-item col-3 mt-2">
+      <li className="nav-item li-item col-3 mt-2 align-items-center">
         <Link 
           to="skills" 
           smooth={true} 
           duration={500} 
-          className={`fs-4 ${activeLink === 'skills' ? 'active-link' : 'inactive-link'}`}
+          className={`fs-4 ${activeLink === 'skills' ? 'active-link' : 'inactive-link'} nav-links`}
           onClick={() => setActiveLink('skills')}
         >
           Skills
@@ -46,7 +46,7 @@ const Navbars = () => {
           to="projects" 
           smooth={true} 
           duration={500} 
-          className={`fs-4 ${activeLink === 'projects' ? 'active-link' : 'inactive-link'}`}
+          className={`fs-4 ${activeLink === 'projects' ? 'active-link' : 'inactive-link'} nav-links`}
           onClick={() => setActiveLink('projects')}
         >
           Projects
@@ -57,7 +57,7 @@ const Navbars = () => {
           to="contact" 
           smooth={true} 
           duration={500} 
-          className={`fs-4 ${activeLink === 'contact' ? 'active-link' : 'inactive-link'}`}
+          className={`fs-4 ${activeLink === 'contact' ? 'active-link' : 'inactive-link'} nav-links`}
           onClick={() => setActiveLink('contact')}
         >
           Contact

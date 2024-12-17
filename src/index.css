@@ -69,10 +69,17 @@ button:focus-visible {
   }
 }
 
+@media (max-width:768px){
+  .main-navbar {
+    margin-left: 1rem;
+    margin-right: 3rem;
+}
+}
+
 .main-navbar{
   background-color: #072841;
-  margin-right: 10px ;
-  height: 10%;
+  /* margin-right: 10px ; */
+  height: 13%;
 }
 
 .hero-text{
