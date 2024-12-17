@@ -15,7 +15,7 @@ const Contact = () => {
 
   // Accessing environment variables
   const serviceID = "service_l3rwzyk";
-  const templateID = "template_s56dndq";
+  const templateID = "template_fr2dd6m";
   const userID = "jUbvb3lp4oAEIOb8Z";
 
   const handleSubmit = (e) => {
@@ -29,9 +29,9 @@ const Contact = () => {
     
   
     const templateParams = {
-       name,       // This will match {{name}}
-      email,     // This will match {{email}}
-      message, // This will match {{message}}
+       name:name,       // This will match {{name}}
+      email:email,     // This will match {{email}}
+      message:message, // This will match {{message}}
     };
     
     
@@ -91,6 +91,7 @@ const Contact = () => {
                 <input 
                   type="text" 
                   id="name" 
+                  name='name'
                   className="form-control" 
                   placeholder="e.g. Mario Irene" 
                   required 
@@ -106,6 +107,7 @@ const Contact = () => {
                 </span>
                 <input 
                   type="email" 
+                  name='email'
                   id="email" 
                   className="form-control" 
                   placeholder="e.g. mario@example.com" 
@@ -120,6 +122,8 @@ const Contact = () => {
                 className="form-control" 
                 id="message" 
                 rows="4" 
+                type="text"
+                name='message'
                 placeholder="Your message" 
                 required
                 onChange={e => setMessage(e.target.value)}
