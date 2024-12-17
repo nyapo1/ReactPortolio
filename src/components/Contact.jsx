@@ -78,6 +78,7 @@ const Contact = () => {
       animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : -30 }}
       transition={{ duration: 1.2 }}
       className="container my-5" ref={contactRef}
+      id='contact'
     >
       <h2 className="text-center mb-4 contact-title">Contact Me</h2>
       <div className="row">

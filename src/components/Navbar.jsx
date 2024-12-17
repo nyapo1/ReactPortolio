@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import '../index.css';
+import { Link } from 'react-scroll';
+
 
 const Navbars = () => {
   const [isVisible, setIsVisible] = useState(true);
+  const [activeLink, setActiveLink] = useState('');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,23 +29,41 @@ const Navbars = () => {
     <div className="container-lg">
       <div className='row justify-content-center'>
         <header className={`py-2 fixed-top rounded main-navbar col-md-8 text-center mt-3 ${isVisible ? '' : 'd-none'}`}>
-          <ul className="nav nav-pills bg-transparent justify-content-around">
-            <li className="nav-item li-item col-3 mt-2">
-              <NavLink to="#skills" className="fs-4">
-                Skills
-              </NavLink>
-            </li>
-            <li className="nav-item li-item col-3 mt-2">
-              <NavLink to="#project" className="fs-4">
-                Projects
-              </NavLink>
-            </li>
-            <li className="nav-item li-item col-3 mt-2">
-              <NavLink to="#contact" className="fs-4">
-                Contact
-              </NavLink>
-            </li>
-          </ul>
+        <ul className="nav nav-pills bg-transparent justify-content-around">
+      <li className="nav-item li-item col-3 mt-2">
+        <Link 
+          to="skills" 
+          smooth={true} 
+          duration={500} 
+          className={`fs-4 ${activeLink === 'skills' ? 'active-link' : 'inactive-link'}`}
+          onClick={() => setActiveLink('skills')}
+        >
+          Skills
+        </Link>
+      </li>
+      <li className="nav-item li-item col-3 mt-2">
+        <Link 
+          to="projects" 
+          smooth={true} 
+          duration={500} 
+          className={`fs-4 ${activeLink === 'projects' ? 'active-link' : 'inactive-link'}`}
+          onClick={() => setActiveLink('projects')}
+        >
+          Projects
+        </Link>
+      </li>
+      <li className="nav-item li-item col-3 mt-2">
+        <Link 
+          to="contact" 
+          smooth={true} 
+          duration={500} 
+          className={`fs-4 ${activeLink === 'contact' ? 'active-link' : 'inactive-link'}`}
+          onClick={() => setActiveLink('contact')}
+        >
+          Contact
+        </Link>
+      </li>
+    </ul>
         </header>
       </div>
     </div>

@@ -66,7 +66,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="container my-5">
+    <div className="container my-5" id='projects'>
       <h2 className="text-center mb-4 project-title">My Projects</h2>
       <motion.div className="row">
         {projects.map((project, index) => (

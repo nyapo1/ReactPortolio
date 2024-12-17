@@ -105,3 +105,14 @@ a:hover {
 .hero-container{
   margin-top: 15vh;
 }
+
+.nav-links{
+  cursor: pointer;
+}
+.nav-links:hover{
+  color:#E5C9D7;
+}
+
+.active-link{
+  color:#E5C9D7;
+}
