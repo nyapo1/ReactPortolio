@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import '../index.css';
+import { Link } from 'react-scroll';
 
 const Hero = () => {
   const ref = useRef(null);
@@ -44,7 +45,7 @@ const Hero = () => {
 
   return (
     <motion.div
-      className='pt-4 text-center hero-container'
+      className=' text-center hero-container'
       ref={ref}
       initial='hidden'
       animate={isVisible ? 'visible' : 'hidden'}
@@ -62,7 +63,12 @@ const Hero = () => {
         variants={itemVariants}
         transition={{ duration: 0.5, delay: 1.5 }}
       >
-        View My Work
+        <Link 
+          to="skills" 
+          smooth={true} 
+          duration={500} 
+          className={`fs-4 text-light no-underline`}
+        >View My Work</Link>
       </motion.button>
       <motion.h5 className='hero-text mt-4' variants={itemVariants} transition={{ duration: 1, delay: 2 }}>
         Let's collaborate to bring your ideas to life!
