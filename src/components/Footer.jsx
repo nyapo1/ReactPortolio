@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter,FaEnvelope, FaTelegram, FaWhatsapp } from 'react-icons/fa'; // Importing social media icons
 import '../styles/Footer.css'
+import { Link } from 'react-scroll';
 
 
 const Footer = () => {
@@ -11,9 +12,37 @@ const Footer = () => {
           <div className="col-md-4 my-3">
             <h5>Links</h5>
             <ul className="list-unstyled">
-              <li><a href="#about" className="text-light">About Me</a></li>
-              <li><a href="#projects" className="text-light">Projects</a></li>
-              <li><a href="#contact" className="text-light">Contact</a></li>
+              <li>
+                <Link 
+                  to="skills" 
+                  smooth={true} 
+                  className="text-light"
+                  duration={500} 
+                  >
+                  My Skills
+              </Link>
+              </li>
+              <li>
+              <Link 
+                to="projects" 
+                smooth={true} 
+                duration={500} 
+                className="text-light"
+                >
+                  Projects
+              </Link>
+                
+              </li>
+              <li>
+              <Link 
+                  to="contact" 
+                  smooth={true} 
+                  duration={500} 
+                  className="text-light"
+                >
+                  Contact
+              </Link>
+              </li>
             </ul>
           </div>
           <div className="col-md-4 my-3">
@@ -35,6 +64,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 aria-label="Telegram"
               >
+                
                 <FaTelegram />
               </a>
               <a href="https://www.linkedin.com/in/felix-nyapola" className="text-light me-3" target="_blank" rel="noopener noreferrer">

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../index.css';
 import { Link } from 'react-scroll';
-
+import { FaTools, FaEnvelope, FaPhone, FaLaptop,FaProjectDiagram } from 'react-icons/fa';
 
 const Navbars = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -39,6 +39,7 @@ const Navbars = () => {
           onClick={() => setActiveLink('skills')}
         >
           Skills
+          <FaLaptop className='ms-2'/>
         </Link>
       </li>
       <li className="nav-item li-item col-3 mt-2">
@@ -50,6 +51,7 @@ const Navbars = () => {
           onClick={() => setActiveLink('projects')}
         >
           Projects
+          <FaTools className='ms-2'/>
         </Link>
       </li>
       <li className="nav-item li-item col-3 mt-2">
@@ -61,6 +63,7 @@ const Navbars = () => {
           onClick={() => setActiveLink('contact')}
         >
           Contact
+          <FaPhone className='ms-2'/>
         </Link>
       </li>
     </ul>
