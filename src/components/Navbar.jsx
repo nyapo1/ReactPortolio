@@ -39,7 +39,7 @@ const Navbars = () => {
           onClick={() => setActiveLink('skills')}
         >
           Skills
-          <FaLaptop className='ms-2'/>
+          <FaLaptop className='ms-2' size={15}/>
         </Link>
       </li>
       <li className="nav-item li-item col-3 mt-2">
@@ -51,7 +51,7 @@ const Navbars = () => {
           onClick={() => setActiveLink('projects')}
         >
           Projects
-          <FaTools className='ms-2'/>
+          <FaTools className='ms-2' size={15}/>
         </Link>
       </li>
       <li className="nav-item li-item col-3 mt-2">
@@ -63,7 +63,7 @@ const Navbars = () => {
           onClick={() => setActiveLink('contact')}
         >
           Contact
-          <FaPhone className='ms-2'/>
+          <FaPhone className='ms-2' size={15}/>
         </Link>
       </li>
     </ul>

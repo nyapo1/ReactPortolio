@@ -113,6 +113,7 @@ a:hover {
 
 .nav-links{
   cursor: pointer;
+  filter: drop-shadow(2px 2px  5em #070708aa)
 }
 .nav-links:hover{
   color:#E5C9D7;
