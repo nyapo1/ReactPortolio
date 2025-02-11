@@ -5,16 +5,17 @@ import '../styles/Project.css';
 const projects = [
   {
     id: 1,
+    title: 'iPhone Advertisment 3D website',
+    description: "Discover the future of mobile technology with our immersive 3D iPhone advertisement website. Experience the sleek design and cutting-edge features of the latest iPhone models like never before. Navigate through a visually stunning, interactive 3D environment that showcases the phone's vibrant display",
+    link: 'https://apple3d-alpha.vercel.app/'
+  },
+  {
+    id: 2,
     title: 'Laptops Online Shop',
     description: 'Online shop website that allows you to reach customers worldwide and showcase your products. All functionalities are there including placing the order and tracking the order. The backend team is currently working on the app for it to be fullstack.',
     link: 'https://kepler-laptops.vercel.app'
   },
-  {
-    id: 2,
-    title: 'Website Development Explained',
-    description: 'Web development is the process of creating and maintaining websites and web applications. This website explains step by step the process and skills required for one to become a web developer.',
-    link: 'https://topics-six.vercel.app'
-  },
+
   {
     id: 3,
     title: 'StyleHub Fashions',
@@ -80,7 +81,7 @@ const Projects = () => {
             whileHover={{ scale: 1.08 }} // Scale up on hover
           >
             <div className="card shadow">
-              <div className="card-body align-content-center">
+              <div className="card-body align-content-start">
                 <h5 className="card-title">{project.title}</h5>
                 <p className="card-text">{project.description}</p>
                 <a href={project.link} className="btn btn-primary" target="_blank" rel="noopener noreferrer">View Project</a>
